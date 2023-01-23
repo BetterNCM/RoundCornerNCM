@@ -6,7 +6,8 @@
     "author": "MicroBlock",
     "description": "网易云窗口圆角。仅Win11。", 
     "betterncm_version": ">=0.2.5",
-    "preview": "preview.png", 
+    "preview": "preview.png",
+    "require_restart": true,
     
     "injects": {
         "Main": [ 
