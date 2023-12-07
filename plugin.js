@@ -1,8 +1,12 @@
 function isWindowMaximized() {
-    const isWidthMaximized = window.outerWidth === window.screen.availWidth;
-    const isHeightMaximized = window.outerHeight === window.screen.availHeight;
+    const maximized =
+        window.outerWidth === window.screen.availWidth &&
+        window.outerHeight === window.screen.availHeight;
+    const fullScreen =
+        window.outerWidth === window.screen.width &&
+        window.outerHeight === window.screen.height;
 
-    return isWidthMaximized && isHeightMaximized;
+    return maximized || fullScreen;
 }
 
 function checkWindowMaximized() {
